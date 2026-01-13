@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Livewire\Users\ExportUsersPage;
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('home');
+Route::get('/', ExportUsersPage::class)->name('users.page');
